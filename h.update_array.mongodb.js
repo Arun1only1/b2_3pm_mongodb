@@ -147,4 +147,50 @@ use("b2_3pm");
 // {
 //     arrayFilters:[{element:{$lt:50}}]
 // })
+
+// db.friends.updateOne({firstName:"Dipesh","sportData.title":"Football"},{
+//     $set:{
+//         "sportData.$.title":"Cricket",
+//         "sportData.$.frequency":10
+//     }
+// })
+
+// db.friends.updateOne({name:"Nikita",hobbies:"Trekking"},{
+//     $set:{
+//         "hobbies.$":"Hiking"
+//     }
+// })
+
+// db.friends.updateOne(
+//   { name: "Nikita" },
+//   {
+//     $inc: {
+//       "scores.$[element]": -10,
+//     },
+//   },
+//   {
+//     arrayFilters: [{ element: 100 }],
+//   }
+// );
+
+// db.friends.updateOne({
+//     name:"Nikita"
+// },{
+//     $set:{
+//         "scores.$[]":30
+//     }
+// })
+
+// db.friends.updateOne(
+//   { name: "Nikita" },
+//   {
+//     $push: {
+//       hobbies: {
+//         $each: ["PubG"],
+//         $position: 0,
+//       },
+//     },
+//   }
+// );
+
 db.friends.find();
