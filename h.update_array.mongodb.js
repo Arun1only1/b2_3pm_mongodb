@@ -79,8 +79,6 @@ use("b2_3pm");
 //     }
 // })
 
-//TODO: push values to starting of array
-
 // ?$
 // db.friends.updateOne({name:"Nikita",scores:45},{
 //     $set:{
@@ -181,6 +179,7 @@ use("b2_3pm");
 //     }
 // })
 
+// ? push values to starting of array
 // db.friends.updateOne(
 //   { name: "Nikita" },
 //   {
